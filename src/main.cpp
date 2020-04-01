@@ -41,5 +41,7 @@ void loop()
       FastLED.show();
       fadeall();
       delay(25);
+      int asdfsdfs;
     } 
+
 }
