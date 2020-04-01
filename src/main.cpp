@@ -24,6 +24,7 @@ void fadeall()
     leds[i].nscale8(120); 
     } 
 }
+
 //**************Set Up****************
 void setup() 
 {
@@ -32,6 +33,7 @@ void setup()
   FastLED.setBrightness(BRIGHTNESS);
   Serial.println("Start up Finished");
 }
+
 //*************Loop*******************
 void loop() 
 {
