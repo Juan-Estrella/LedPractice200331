@@ -9,14 +9,14 @@
 #define FRAMES_PER_SECOND  120
 CRGB leds[NUM_LEDS];
 
-/************************************
+/**************Function***************
 Purpose:
 Gradually Fades LEDs after they turn on
 
 Parameters: 
 NA
 The lower the .nscale argument, the faster the LEDs turn off (i.e. shorter the trail is.
-*****/
+*************************************/
 void fadeall() 
 { 
   for(int i = 0; i < NUM_LEDS; i++) 
@@ -24,7 +24,7 @@ void fadeall()
     leds[i].nscale8(120); 
     } 
 }
-
+//**************Set Up****************
 void setup() 
 {
   delay(5000); // 3 second delay for recovery
@@ -32,7 +32,7 @@ void setup()
   FastLED.setBrightness(BRIGHTNESS);
   Serial.println("Start up Finished");
 }
-
+//*************Loop*******************
 void loop() 
 {
    for (int x = 0; x <144; x++) //moves LEDs forward
